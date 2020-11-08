@@ -5,13 +5,10 @@ const useStyles = makeStyles({
         marginBottom:"5%",
         color:"white"
     },
-    span: {
-        color:"yellow",
-    },
-    h5:{
+    h5: {
         color:"white",
         opacity:"0.7"
-    }
+    },
 })
 
 export default useStyles;
