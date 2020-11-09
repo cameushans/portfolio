@@ -9,6 +9,7 @@ const useStyles = makeStyles({
         color:"white",
         opacity:"0.7"
     },
+
 })
 
 export default useStyles;

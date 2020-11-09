@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import {Grid,Typography, Divider,Button} from "@material-ui/core";
+import {Grid,Typography, Divider,Button,Avatar} from "@material-ui/core";
 import useStyles from "./Home.style";
+import {Link} from "react-router-dom";
 import "./Home.css";
 
 
@@ -24,8 +25,12 @@ const Home = () => {
                     </Typography>
 
                     <Grid container item lg={6}   >
-                            <Button size="large" variant="contained">Project</Button>
-                            <Button size="large" variant="contained">Contact</Button>
+                             <Link to="/contact">
+                                 <Button size="small" >Project</Button>
+                            </Link>
+                            <Link to="/contact">
+                                <Button size="small" >Contact</Button>
+                            </Link>
                     </Grid>
                     
                 </Grid>
