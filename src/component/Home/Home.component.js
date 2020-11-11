@@ -26,10 +26,10 @@ const Home = () => {
 
                     <Grid container item lg={6}   >
                              <Link to="/contact">
-                                 <Button size="small" >Project</Button>
+                                 <Button size="small"  variant="outlined" color="secondary"  >Project</Button>
                             </Link>
                             <Link to="/contact">
-                                <Button size="small" >Contact</Button>
+                                <Button size="small" variant="outlined" color="primary" >Contact</Button>
                             </Link>
                     </Grid>
                     

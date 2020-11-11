@@ -3,7 +3,7 @@
   .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            color:yellow;
+            color:grey;
 }
 
 
@@ -37,7 +37,8 @@
 	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             height:100vh;
-            background-color:#16213B;
+            background-color: #16213A;
+            margin:0
 }
 
 
