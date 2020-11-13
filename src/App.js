@@ -6,12 +6,16 @@ import Contact from "./component/Contact/Contact.component";
 import "./App.css";
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
+import red from '@material-ui/core/colors/red';
+import Project from "./component/Project/Project.component"
+
 
 
 
 const theme = createMuiTheme({
   palette:{
     primary:blue,
+    secondary:blue
   }
 })
 
@@ -27,6 +31,11 @@ function App() {
                   <Route exact path="/">
                       <Home/>
                   </Route>
+
+                  <Route exact path="/project">
+                      <Project/>
+                  </Route>
+
 
                   <Route exact path="/contact">
                       <Contact/>

@@ -29,7 +29,7 @@ const Home = () => {
                                  <Button size="small"  variant="outlined" color="secondary"  >Project</Button>
                             </Link>
                             <Link to="/contact">
-                                <Button size="small" variant="outlined" color="primary" >Contact</Button>
+                                <Button size="small" variant="outlined" color="secondary" >Contact</Button>
                             </Link>
                     </Grid>
                     

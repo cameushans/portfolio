@@ -6,6 +6,7 @@ import "./Contact.css";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import {Link} from "react-router-dom";
 
 
 
@@ -14,11 +15,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const Contact = () => {
 
     return(
-           <Grid container   className="fade-in" justify="space-evenly">
-               <Grid  item lg={4} style={{marginTop:"8%"}} >
-                   <Typography variant ="h3" className="Typography">Me contacter ? </Typography>
-                   <Typography className="Typography" variant="h5">Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:</Typography>
-                   <List dense={true}>
+           <Grid container  lg={12} className="fade-in" >
+               <Grid  item lg={6} style={{marginTop:"8%"}} >
+                   <Typography variant ="h3" className="Typography"  style={{marginBottom:"5%"}}>Me contacter ? </Typography>
+                   <Typography className="Typography" variant="h5"  style={{marginBottom:"5%"}}>Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:</Typography>
+                   <List dense={true}  style={{marginBottom:"5%"}}>
 
                        <ListItem>
                             <ListItemIcon>
@@ -30,14 +31,14 @@ const Contact = () => {
                      <ListItem>
                             <ListItemIcon>
                                <GitHubIcon className="icon"/>
-                               <ListItemText className="Typography">Linkedin:</ListItemText>
+                               <ListItemText className="Typography">Linkedin:<a href="https://www.linkedin.com/in/hans-cameus-047447155">https://www.linkedin.com/in/hans-cameus-047447155/</a></ListItemText>
                             </ListItemIcon>
                      </ListItem>  
 
                     <ListItem>
                        <ListItemIcon>
                              <LinkedInIcon className="icon"/>
-                             <ListItemText className="Typography">GitHub:</ListItemText>
+                             <ListItemText className="Typography">GitHub:<a href="https://github.com/cameushans">https://github.com/cameushans</a></ListItemText>
                        </ListItemIcon>
                     </ListItem>   
                          
@@ -46,12 +47,12 @@ const Contact = () => {
 
 
                </Grid>
-               <Grid  item lg={6}  style={{marginTop:"8%"}}>
-                   <Grid item container lg={10}  justify="space-between">
-                            <TextField id="standard-basic" label="Enter Your name" color="secondary" />
-                            <TextField id="standard-basic" label="Enter Your name"  color="secondary"/>
+               <Grid  container item lg={6}  style={{marginTop:"8%"}}>
+                   <Grid item  lg={8}  >
+                            <TextField id="standard-basic" label="Enter Your name" color="secondary" style={{width:"50%"}} />
+                            <TextField id="standard-basic" label="Enter Your name"  color="secondary" style={{width:"50%"}}/>
                   </Grid>
-                 <Grid item container lg={10}  >
+                 <Grid item lg={8}  >
                  <TextField
                                 id="outlined-multiline-static"
                                 label="Message"
