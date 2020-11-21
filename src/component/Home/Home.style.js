@@ -9,6 +9,12 @@ const useStyles = makeStyles({
         color:"white",
         opacity:"0.7"
     },
+    avatar: {
+        width: "53.5%",
+        height:"20%",
+        borderRadius:"4%",
+        marginRight:"1%"
+    }
 
 })
 

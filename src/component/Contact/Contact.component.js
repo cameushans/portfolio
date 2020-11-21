@@ -15,11 +15,16 @@ import {Link} from "react-router-dom";
 const Contact = () => {
 
     return(
-           <Grid container  lg={12} className="fade-in" >
-               <Grid  item lg={6} style={{marginTop:"8%"}} >
-                   <Typography variant ="h3" className="Typography"  style={{marginBottom:"5%"}}>Me contacter ? </Typography>
-                   <Typography className="Typography" variant="h5"  style={{marginBottom:"5%"}}>Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:</Typography>
-                   <List dense={true}  style={{marginBottom:"5%"}}>
+        <div>
+            <Grid lg={12} container direction="column"  className="fade-in" >
+                <Grid container item lg={4} justify="flex-end">
+                 <Typography variant ="h3" className="Typography" >Get in touch? </Typography>
+                 </Grid>
+
+          <Grid container item justify="space-evenly">
+           <Grid container item  lg={5} justify="center" >
+                   <Typography className="Typography" variant="h6">Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:</Typography>
+                   <List  dense={true}>
 
                        <ListItem>
                             <ListItemIcon>
@@ -43,16 +48,12 @@ const Contact = () => {
                     </ListItem>   
                          
                    </List>
-                   <Typography  variant="h6" className="Typography">You can also use the contact form on this page.</Typography>
+                   <Typography  variant="p" className="Typography">You can also use the contact form on this page.</Typography>
 
-
-               </Grid>
-               <Grid  container item lg={6}  style={{marginTop:"8%"}}>
-                   <Grid item  lg={8}  >
+               </Grid> 
+          <Grid  container  lg={5} item justify="columnr" >
                             <TextField id="standard-basic" label="Enter Your name" color="secondary" style={{width:"50%"}} />
                             <TextField id="standard-basic" label="Enter Your name"  color="secondary" style={{width:"50%"}}/>
-                  </Grid>
-                 <Grid item lg={8}  >
                  <TextField
                                 id="outlined-multiline-static"
                                 label="Message"
@@ -63,10 +64,13 @@ const Contact = () => {
                                 color="secondary"
                                 />
                                 <Button variant="outlined" color="secondary"  >Send Message</Button>
-                 </Grid>
+                                </Grid>
+                                </Grid>
 
-               </Grid>
-           </Grid>
+
+                       </Grid>
+
+           </div>
 
 
     )

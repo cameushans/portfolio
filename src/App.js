@@ -3,10 +3,10 @@ import Header from './component/NavBar/NavBar.component';
 import {Switch,Link,Route,Router} from "react-router-dom";
 import Home from "./component/Home/Home.component";
 import Contact from "./component/Contact/Contact.component";
+import About from "./component/About/About.component"
 import "./App.css";
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
-import red from '@material-ui/core/colors/red';
 import Project from "./component/Project/Project.component"
 
 
@@ -34,6 +34,11 @@ function App() {
 
                   <Route exact path="/project">
                       <Project/>
+                  </Route>
+
+
+                  <Route exact path="/about">
+                      <About/>
                   </Route>
 
 

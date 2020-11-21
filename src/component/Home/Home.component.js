@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import {Grid,Typography, Divider,Button,Avatar} from "@material-ui/core";
+import React from 'react';
+import {Grid,Typography, Button} from "@material-ui/core";
 import useStyles from "./Home.style";
 import {Link} from "react-router-dom";
 import "./Home.css";
@@ -11,8 +11,11 @@ const Home = () => {
    const  classes = useStyles();
 
     return(
-            <Grid container  justify="center" alignItems="center" direction="column"  className="fade-in">
-                <Grid container item lg={6}  >
+            <Grid container  justify="center" alignItems="center"  className="fade-in" >
+                <Grid container item lg={3} justify="flex-end">
+                     <img src="../../../hans.jpg"  className={classes.avatar} alt="ma photo"></img>
+                </Grid>
+                <Grid container item lg={6} direction="column" >
                     <Typography variant="h3" className={classes.h3}>
                             Hey there,
                             my name is Cameus Hans.
@@ -25,10 +28,10 @@ const Home = () => {
                     </Typography>
 
                     <Grid container item lg={6}   >
-                             <Link to="/contact">
+                             <Link to="/contact" className="link">
                                  <Button size="small"  variant="outlined" color="secondary"  >Project</Button>
                             </Link>
-                            <Link to="/contact">
+                            <Link to="/contact" className="link">
                                 <Button size="small" variant="outlined" color="secondary" >Contact</Button>
                             </Link>
                     </Grid>

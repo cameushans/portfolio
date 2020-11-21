@@ -21,14 +21,17 @@ const Header = () => {
                           </Grid>
 
                           <Grid item lg={4} > 
-                              <Link to="/" >
-                                <Button style={{color:"white"}}>Home</Button>
+                              <Link to="/" className="link" >
+                                <Button >Home</Button>
                               </Link>
-                              <Link  to="/project">
-                                <Button style={{color:"white"}}>Projects</Button>
+                              <Link  to="/project"  className="link" >
+                                <Button className="buttonStyle">Projects</Button>
                               </Link>
-                              <Link to="/contact">
-                                <Button style={{color:"white"}}>Contact</Button>
+                              <Link to="/about"  className="link" >
+                                <Button className="buttonStyle">About</Button>
+                              </Link>
+                              <Link to="/contact"  className="link" >
+                                <Button className="buttonStyle">Contact</Button>
                               </Link>
                           </Grid>
 

@@ -1,3 +1,13 @@
 .bluehead {
     background-color: white;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color:#16213A;
+}
+
+.buttonStyle {
+    color:#16213A;
 }
