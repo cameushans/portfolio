@@ -28,10 +28,10 @@ const Home = () => {
                     </Typography>
 
                     <Grid container item lg={6}   >
-                             <Link to="/contact" className="link">
+                             <Link to="/project" className="link">
                                  <Button size="small"  variant="outlined" color="secondary"  >Project</Button>
                             </Link>
-                            <Link to="/contact" className="link">
+                            <Link to="/about" className="link">
                                 <Button size="small" variant="outlined" color="secondary" >Contact</Button>
                             </Link>
                     </Grid>

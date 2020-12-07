@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react';
+import React, { lazy , Suspense} from 'react';
 import Header from './component/NavBar/NavBar.component';
-import {Switch,Link,Route,Router} from "react-router-dom";
-import Home from "./component/Home/Home.component";
-import Contact from "./component/Contact/Contact.component";
-import About from "./component/About/About.component"
+import {Switch,Route} from "react-router-dom";
 import "./App.css";
-import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
-import Project from "./component/Project/Project.component"
-
+import Footer from "./component/Footer/Footer";
+const Home = lazy(()=>import("./component/Home/Home.component"));
+const Project = lazy(()=>import("./component/Project/Project.component"));
+const About = lazy(()=>import("./component/About/About.component"));
 
 
 
@@ -27,26 +26,23 @@ function App() {
       <ThemeProvider theme={theme}>
             <Header />
             <Switch>
+              <Suspense fallback={<div>...Loading</div>}>
 
                   <Route exact path="/">
                       <Home/>
                   </Route>
-
+                  
                   <Route exact path="/project">
                       <Project/>
                   </Route>
-
 
                   <Route exact path="/about">
                       <About/>
                   </Route>
 
-
-                  <Route exact path="/contact">
-                      <Contact/>
-                  </Route>
-
+                  </Suspense> 
             </Switch>
+            <Footer/>
       </ThemeProvider>
     </div>
 
